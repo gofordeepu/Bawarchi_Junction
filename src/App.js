@@ -1,11 +1,9 @@
 import './App.css';
+import AppLayout from './components/AppLayout';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to React: {`Add any expression in the curly braces ${5+5}`}</h1>
-    </div>
-  );
+
+const App=()=>{
+  return <AppLayout />
 }
 
 export default App;
