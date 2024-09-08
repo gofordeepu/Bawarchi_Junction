@@ -53,6 +53,8 @@ code {
   padding: 10px;
   margin: 20px;
   background-color: whitesmoke;
+  word-break: break-all; 
+  word-wrap: break-word;
 }
 
 .restro-card:hover{
@@ -74,8 +76,90 @@ code {
 }
 
 .filter-btn{
-  padding: 5px;
-  margin: 10px;
+  order:2;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  text-wrap: wrap;
   cursor: pointer;
+  background-color: whitesmoke;
+  border-color: whitesmoke whitesmoke whitesmoke whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgb(141, 29, 29);
 }
 
+.shimmer-card{
+  width: 400px; 
+  height: 550px;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding:10px;
+}
+
+.shimmer-btn{
+  width: 200px;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  border: 0px;
+}
+
+.shimmer-card-container{
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.login-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: inline-block; 
+  font-weight: bolder;
+  text-wrap: wrap;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-color: whitesmoke whitesmoke whitesmoke whitesmoke;
+  color: rgb(141, 29, 29);
+}
+
+
+.Filter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search-container input{
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.search-container button{
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px solid grey; */
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-color: whitesmoke whitesmoke whitesmoke whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgb(141, 29, 29);
+}
