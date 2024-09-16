@@ -1,9 +1,12 @@
 import { LOGO_URL } from "../utils/constants";
 import { BRAND_NAME } from "../utils/constants";
 import {useState} from "react";
+import { Link } from "react-router-dom";
 const Header=()=>{
   const [auth_btn,setauth_btn]=useState("Login");
   const [auth_icon,setauth_icon]=useState("👤");
+
+  
     return(
       <div className="header">
         <div className='logo-container'>
@@ -13,10 +16,10 @@ const Header=()=>{
   
         <div className='nav-items'>
           <ul>
-            <li>Home</li>
-            <li>About&nbsp;Us</li>
-            <li>Contact</li>
-            <li>Cart</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About&nbsp;Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link>Cart</Link></li>
             <button className="login-btn" onClick={()=>{
               if(auth_btn==="Login"){
                 setauth_btn("Logout");

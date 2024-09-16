@@ -46,10 +46,18 @@ code {
   margin: 10px;
   cursor: pointer;
 }
+.nav-items ul li a{
+text-decoration: none;
+color: black;
+}
+.nav-items ul li :hover{
+  color: red;
+  font-weight: bolder;
+  }
 
 .restro-card{
   width: 400px;
-  max-height: 550px;
+  max-height: 800px;
   padding: 10px;
   margin: 20px;
   background-color: whitesmoke;
@@ -57,12 +65,14 @@ code {
   word-wrap: break-word;
 }
 
+
+
 .restro-card:hover{
   border: 3px solid grey;
   cursor: pointer;
 }
 .search{
-  padding: 10px
+  padding: 10px;
 }
 
 .res-logo{
@@ -73,6 +83,11 @@ code {
 .res-container{
   display: flex;
   flex-wrap: wrap;
+}
+
+.link-restro-card{
+  text-decoration: none;
+  color: black;
 }
 
 .filter-btn{
@@ -146,6 +161,7 @@ code {
   margin: 10px;
   border: 1px solid grey;
   border-radius: 10px;
+  font-size: 16px;
 }
 
 .search-container button{
@@ -162,4 +178,68 @@ code {
   font-size: 16px;
   font-weight: bolder;
   color: rgb(141, 29, 29);
+}
+
+
+.menu-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-container{
+  width: 100%;
+  max-height: 600px;
+  margin: 10px;
+  word-break: break-all; 
+  word-wrap: break-word;
+}
+
+.menu-container ul{
+  list-style-type: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.menu-container #restro-img{
+  width: 80%;
+  max-height: fit-content;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.menu-item-container{
+  padding: 20px;
+  margin: 20px;
+  background-color:white
+}
+.menu-item-container h1,#cost-desc{
+  text-align: center;
+}
+
+.menu-item-container h2{
+  margin-left: 50px;
+}
+
+
+.food-menu-item-img img{
+ width: 150px;
+ height: 100px;
+ object-fit: cover;
+}
+.food-menu-item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-self: self-end;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color:white
+}
+
+.food-menu-item-desc{
+  flex:1;
 }
